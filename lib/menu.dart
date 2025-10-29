@@ -4,7 +4,7 @@ class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
 
   final String nama = "Syakirah Zahra Dhawini"; // nama
-  final String npm = "2406352950"; // npm
+  final String npm = "2406353950"; // npm
   final String kelas = "D"; // kelas
 
   final List<ItemHomepage> items = [
@@ -27,7 +27,6 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
 
-      // ✅ Tambahkan scroll agar tidak overflow
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -56,7 +55,6 @@ class MyHomePage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // ✅ Bungkus GridView di Container agar ukurannya pas
               GridView.count(
                 crossAxisCount: 3,
                 crossAxisSpacing: 10,
